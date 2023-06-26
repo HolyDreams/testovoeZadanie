@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,10 @@ namespace testovoeZadanie
         {
             try
             {
+                if (!File.Exists("SQLite.db"))
+                {
+                    File.Copy(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().IndexOf("\\bin\\")) + "\\SQLite.db", "SQLite.db");
+                }
                 using (var connect = new SqliteConnection("Data Source=SQLite.db"))
                 {
                     connect.Open();
