@@ -117,10 +117,10 @@ namespace testovoeZadanie
                 panelGrid.Arrange(new Rect(5, 5, pageSize.Width, pageSize.Height));
 
                 print.PrintVisual(panelGrid, Title);
-
-                labelPrintTime.Visibility = Visibility.Hidden;
-                butPrint.Visibility = Visibility.Visible;
             }
+
+            labelPrintTime.Visibility = Visibility.Hidden;
+            butPrint.Visibility = Visibility.Visible;
         }
     }
 }

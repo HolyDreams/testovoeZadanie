@@ -12,7 +12,7 @@
             <TextBox x:Name="textLogin" Width="120"/>
             <Label x:Name="labelPassword" Content="Пароль" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <PasswordBox x:Name="textPassword" Height="18" Width="120" PasswordChar="*"/>
-            <Button x:Name="butLogin" Content="Войти" HorizontalAlignment="Center" Margin="0,20,0,0" Click="butLogin_Click"/>
+            <Button x:Name="butLogin" Content="Войти" HorizontalAlignment="Center" Margin="0,20,0,0" Click="butLogin_Click" Width="75"/>
         </StackPanel>
         <StackPanel x:Name="panelGrid" Visibility="Hidden">
             <Button x:Name="butPrint" Content="Печать" HorizontalAlignment="Left" Width="60" Margin="5,3,0,3" Click="butPrint_Click"/>
